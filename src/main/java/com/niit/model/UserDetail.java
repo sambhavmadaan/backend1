@@ -17,6 +17,22 @@ public class UserDetail {
 	String address;
 	String email;
 	String mobile;
+	String Security_q;
+	public String getSecurity_q() {
+		return Security_q;
+	}
+	public void setSecurity_q(String security_q) {
+		Security_q = security_q;
+	}
+	public String getSecurity_a() {
+		return Security_a;
+	}
+	public void setSecurity_a(String security_a) {
+		Security_a = security_a;
+	}
+	String Security_a;
+	
+	
 	public String getUserName() {
 		return userName;
 	}
