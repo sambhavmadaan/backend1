@@ -55,16 +55,16 @@ public class CartDAOTestCase {
 		cartItem.setQuantity(40);
 		cartDAO.updateCartItem(cartItem);
 */
-		List<CartItem> cartItems=cartDAO.showCartItems("sarthak");
-	/*	assertTrue("Problem in showing CartItem:",cartItems.size()>0);*/
+		/*List<CartItem> cartItems=cartDAO.showCartItems("sarthak");
+		assertTrue("Problem in showing CartItem:",cartItems.size()>0);
 		
 		for(CartItem cartItem:cartItems) {
 			System.out.print(cartItem.getProdName()+":::");
 			System.out.print(cartItem.getQuantity()+":::");
 			System.out.print(cartItem.getPrice()+":::");
 			System.out.println(cartItem.getStatus()+":::");
-	}
-	}
+*/	}
+	
 	
 
 @Test
@@ -84,7 +84,7 @@ public void addCartItemTest() {
 @Test
 public void showCartItems() {
 	
-	List<CartItem> cartItems=cartDAO.showCartItems("sarthak");
+	List<CartItem> cartItems=cartDAO.showCartItems("new");
 	assertTrue("Problem in showing CartItem:",cartItems.size()>0);
 	for(CartItem cartItem:cartItems) {
 		System.out.print(cartItem.getProdName()+":::");
