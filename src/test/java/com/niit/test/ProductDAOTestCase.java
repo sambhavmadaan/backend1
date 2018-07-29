@@ -51,7 +51,7 @@ public class ProductDAOTestCase {
 			System.out.println(product.getProdDesc()+"::");
 		}
 	}
-	
+	@Ignore
 	@Test
 	public void addProductTestCase(){
 		Product product=new Product();
@@ -75,7 +75,7 @@ public class ProductDAOTestCase {
 		System.out.println(product.getProdDesc());
 		assertTrue("problem in deleting",productDAO.deleteProduct(product));
 	}
-	@Ignore
+	
 	@Test
 	public void listProductTest(){
 		List<Product> listProduct=productDAO.listprod();
